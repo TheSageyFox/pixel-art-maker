@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Pixel Art Maker!</title>
+    <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Gugi|Philosopher" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+  <div id="header">
+    <h1>Pixel Art Maker</h1>
+    </div>
+    <div class="col-xs-6" id="left">
+    <h2>Please select a grid size.</h2>
+      <form id="sizePicker">
+        Height:
+        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        Width:
+        <input type="number" id="inputWidth" name="width" min="1" value="1">
+        <input type="submit">
+      </form>
+    </div>
+    <div class="col-xs-6" id="right">
+     <h2>Please select a color.</h2>
+      <input type="color" id="colorPicker">
+    </div>
+    <div class="col-xs-12" id="center">
+    <h2>Design Canvas</h2>
+      <p> To color a block, left-click. To remove the color, right-click.</p>
+      <table id="pixelCanvas"></table>
+      <script src="js/designs.js"></script>
+      <p id="quote">“Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while” – Steve Jobs</p>
+    </div>
+    </body>
+</html>
